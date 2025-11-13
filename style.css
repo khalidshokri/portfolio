@@ -77,22 +77,32 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* Contact section */
+/* Contact section - centered and responsive */
 #contact {
   background-color: #111;
-  padding: 60px 20px;
   border-top: 2px solid #163E64;
-  text-align: center;
+  padding: 60px 20px;
+  display: flex;               /* creates a flex container */
+  justify-content: center;     /* centers horizontally */
+  align-items: center;         /* centers vertically (if section has height) */
+  text-align: center;          /* centers inline text inside .contact-inner */
 }
 
+/* Make inner wrapper control width so long lines wrap nicely */
+#contact .contact-inner {
+  max-width: 700px;
+  width: 100%;
+}
+
+/* Heading and links */
 #contact h2 {
   color: #163E64;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 #contact p {
-  font-size: 1.1em;
   margin: 8px 0;
+  color: #ddd;
 }
 
 #contact a {
@@ -101,16 +111,9 @@ h2 {
   font-weight: 500;
 }
 
-#contact a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
-footer {
-  background-color: #000;
-  color: #777;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
-  border-top: 1px solid #163E64;
+/* Small screens: reduce padding */
+@media (max-width: 480px) {
+  #contact {
+    padding: 40px 12px;
+  }
 }
