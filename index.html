@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khalid Shokri Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Khalid Shokri</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Hi, I'm Khalid</h2>
+            <p>Creative Media Student | Aspiring Digital Professional</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I’m a college student from Middlesbrough, UK, studying Level 3 Extended Diploma in Creative Media (Digital). I enjoy editing, storytelling, and creating digital content that connects with audiences. I’m passionate about combining creativity with technology to produce unique experiences.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">Video Editing (Lead Editor)</div>
+            <div class="skill-card">Adobe Premiere & After Effects</div>
+            <div class="skill-card">Graphic Design (Photoshop, Canva)</div>
+            <div class="skill-card">Basic Web Development (HTML, CSS)</div>
+            <div class="skill-card">Team Collaboration & CPR Certified</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Film Buddy Music Video</h3>
+                <p>Lead editor for a short music video, coordinating scenes and audio editing.</p>
+            </div>
+            <div class="project-card">
+                <h3>PROTO Visit</h3>
+                <p>Experience visit to PROTO in Newcastle; gained insights into creative media industry practices.</p>
+            </div>
+            <!-- Add more projects here -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/" target="_blank">linkedin.com/in/yourprofile</a></p>
+        <p>GitHub: <a href="https://github.com/" target="_blank">github.com/yourprofile</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Khalid Shokri. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for nav links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
