@@ -111,22 +111,21 @@ section h2 {
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
-/* --------------------- PROJECTS GRID --------------------- */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+/* --------------------- SMALL PROJECTS ROW --------------------- */
+.small-projects-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
-  justify-items: center;
-  align-items: start;
-  width: 100%;
 }
 
+/* --------------------- PROJECT CARDS --------------------- */
 .project-card {
   background: #F0F8FF;
   padding: 20px;
   border-radius: 12px;
   width: 100%;
-  max-width: 400px;  /* keeps cards proportional */
+  max-width: 400px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
@@ -139,21 +138,24 @@ section h2 {
   margin-bottom: 15px;
 }
 
-/* --------------------- IFRAME CHART --------------------- */
-.project-card iframe {
+/* --------------------- PIE CHART --------------------- */
+.pie-chart-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.pie-card {
+  max-width: 600px;  /* wider than normal cards */
   width: 100%;
-  height: 350px;  /* proportional */
+}
+
+.pie-card iframe {
+  width: 100%;
+  height: 500px;  /* larger height for better visibility */
   border: none;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-  margin-top: 10px;
-}
-
-/* Optional: bigger chart on large screens */
-@media (min-width: 900px) {
-  .project-card iframe {
-    height: 450px;
-  }
 }
 
 /* --------------------- CONTACT --------------------- */
