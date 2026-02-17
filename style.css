@@ -14,7 +14,7 @@ body {
 
 /* --------------------- HEADER & NAV --------------------- */
 header {
-  background-color: #1E3A8A; /* main blue header */
+  background-color: #163e64; /* main blue header */
   padding: 20px 40px;
 }
 
@@ -52,7 +52,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   height: 400px;
-  background: #3B82F6; /* lighter blue hero */
+  background: #357abd; /* lighter blue hero */
   text-align: center;
   padding: 0 20px;
 }
@@ -197,3 +197,4 @@ footer {
   background-color: #1E3A8A; /* blue footer */
   color: white;
 }
+
