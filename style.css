@@ -121,7 +121,7 @@ section h2 {
 }
 
 .skill-card {
-  background: #1E40AF;
+  background: #163e64;
   padding: 15px 25px;
   border-radius: 10px;
   min-width: 180px;
@@ -141,7 +141,7 @@ section h2 {
 
 /* --------------------- PROJECT CARDS --------------------- */
 .project-card {
-  background: #3B82F6;
+  background: #357abd;
   padding: 20px;
   border-radius: 12px;
   width: 100%;
@@ -203,6 +203,7 @@ section h2 {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #1E3A8A;
+  background-color: #163e64;
   color: white;
 }
+
