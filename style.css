@@ -1,20 +1,18 @@
-/* --------------------- GENERAL --------------------- */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 body {
-  line-height: 1.6;
-  background-color: #ffffff;
-  color: #000000; /* main black text */
+  background: white;
+  color: black;
 }
 
-/* --------------------- HEADER & NAV --------------------- */
+/* HEADER */
 header {
-  background-color: #163e64; /* main blue header */
+  background: #163e64;
   padding: 20px 40px;
 }
 
@@ -39,120 +37,84 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #F97316; /* orange hover */
+  color: #F97316;
 }
 
-/* --------------------- HERO SECTION --------------------- */
+/* HERO */
 #hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 400px;
-  background: #357abd; /* lighter blue hero */
+  background: #357abd;
   text-align: center;
-  padding: 0 20px;
-}
-
-.hero-content h2 {
-  font-size: 36px;
-  margin-bottom: 10px;
+  padding: 100px 20px;
   color: white;
 }
 
-.hero-content p {
-  font-size: 18px;
-  margin-bottom: 20px;
-  color: #ffffff;
-}
-
 .btn {
-  display: inline-block;
+  background: black;
+  color: white;
   padding: 10px 18px;
-  background: #000000; /* black button */
-  color: #ffffff;
   text-decoration: none;
   border-radius: 6px;
-  font-weight: bold;
-  transition: 0.3s;
 }
 
 .btn:hover {
-  background: #F97316; /* orange hover */
+  background: #F97316;
 }
 
-/* --------------------- SECTIONS --------------------- */
+/* SECTIONS */
 section {
   padding: 60px 40px;
 }
 
 section h2 {
+  text-align: center;
   font-size: 28px;
   margin-bottom: 20px;
-  text-align: center;
 }
 
-/* --------------------- ABOUT ME --------------------- */
+/* ABOUT */
 .about-text {
   text-align: center;
   max-width: 800px;
-  margin: 0 auto;
+  margin: auto;
   font-size: 18px;
-  line-height: 1.8;
-  color: #000000;
 }
 
-/* --------------------- SKILLS --------------------- */
+/* SKILLS */
 .skills-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
+  gap: 20px;
 }
 
 .skill-card {
-  background: #1E40AF; /* dark blue */
+  background: #1E40AF;
+  color: white;
   padding: 15px 25px;
   border-radius: 10px;
-  min-width: 180px;
-  text-align: center;
   font-weight: bold;
-  color: white;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
-/* --------------------- SMALL PROJECTS ROW --------------------- */
+/* PROJECTS */
 .small-projects-row {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
-/* --------------------- PROJECT CARDS --------------------- */
 .project-card {
-  background: #3B82F6; /* blue card */
+  background: #3B82F6;
+  color: white;
   padding: 20px;
   border-radius: 12px;
-  width: 100%;
   max-width: 400px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  color: white;
 }
 
-.project-card h3 {
-  margin-bottom: 10px;
-  font-size: 22px;
-}
-
-.project-card p {
-  margin-bottom: 15px;
-}
-
-/* --------------------- PIE CHART --------------------- */
+/* PIE CHART */
 .pie-chart-container {
   display: flex;
   justify-content: center;
@@ -160,41 +122,35 @@ section h2 {
 }
 
 .pie-card {
-  max-width: 650px; /* wider for chart */
+  max-width: 700px;
   width: 100%;
-  background: #000000; /* black background for pie */
-  color: white;
+  background: black;
 }
 
 .pie-card iframe {
   width: 100%;
   height: 500px;
   border: none;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  border-radius: 10px;
 }
 
-/* --------------------- CONTACT --------------------- */
+/* CONTACT */
 #contact {
   text-align: center;
 }
 
 #contact a {
-  color: #1E3A8A; /* blue links */
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
+  color: #1E3A8A;
 }
 
 #contact a:hover {
-  color: #F97316; /* orange hover */
+  color: #F97316;
 }
 
-/* --------------------- FOOTER --------------------- */
+/* FOOTER */
 footer {
+  background: #1E3A8A;
+  color: white;
   text-align: center;
   padding: 20px;
-  background-color: #1E3A8A; /* blue footer */
-  color: white;
 }
-
