@@ -1,143 +1,120 @@
-/* Reset some default browser styles */
+/* Base reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Body styling */
 body {
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
+    background-color: #ffffff; /* white background */
+    color: #1e1e1e; /* dark text */
+    line-height: 1.7;
     font-size: 16px;
 }
 
 /* Header styling */
 header {
-    background-color: #1e1e1e;
-    color: #fff;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 4rem 1rem 3rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-weight: 700;
     margin-bottom: 0.5rem;
 }
 
 header p {
-    font-size: 1.1rem;
-    font-weight: 300;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #555;
 }
 
-/* Section titles */
+/* Section styling */
+section {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
 section h2 {
     font-size: 2rem;
-    text-align: center;
-    margin: 2rem 0 1rem 0;
-    color: #1e1e1e;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #1e1e1e; /* subtle accent like naledi.co.uk */
+    padding-left: 0.8rem;
 }
 
-/* About section */
-#about {
-    max-width: 800px;
-    margin: 0 auto 3rem auto;
-    padding: 0 1rem;
-    text-align: center;
-}
-
-/* Projects section */
-#projects {
-    max-width: 1000px;
-    margin: 0 auto 3rem auto;
-    padding: 0 1rem;
-}
-
+/* Project cards */
 .project-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    margin-bottom: 3rem;
 }
 
 .project-card h3 {
-    color: #1e1e1e;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.project-card p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.project-card ul {
+    margin-left: 1.2rem;
     margin-bottom: 0.5rem;
 }
 
 .project-card img {
-    max-width: 100%;
-    border-radius: 10px;
+    width: 100%;
+    border-radius: 8px;
     margin: 1rem 0;
 }
 
-.project-card ul {
-    margin: 0.5rem 0 0 1.2rem;
-}
-
-.project-card ul li {
-    margin-bottom: 0.3rem;
-}
-
-/* Skills section */
-#skills {
-    max-width: 800px;
-    margin: 0 auto 3rem auto;
-    padding: 0 1rem;
-    text-align: center;
-}
-
+/* Skills section as horizontal list */
 #skills ul {
-    list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 1rem;
+    list-style: none;
+    padding: 0;
     margin-top: 1rem;
 }
 
 #skills ul li {
-    background-color: #1e1e1e;
-    color: #fff;
+    background-color: #f0f0f0;
+    color: #1e1e1e;
     padding: 0.5rem 1rem;
-    border-radius: 20px;
+    border-radius: 30px;
+    font-weight: 500;
     font-size: 0.9rem;
 }
 
 /* Footer styling */
 footer {
-    background-color: #1e1e1e;
-    color: #fff;
     text-align: center;
-    padding: 1.5rem 1rem;
+    padding: 2rem 1rem;
+    color: #777;
     font-size: 0.9rem;
 }
 
-/* Responsive design */
+/* Responsive adjustments */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     section h2 {
-        font-size: 1.7rem;
-    }
-
-    .project-card {
-        padding: 1rem;
+        font-size: 1.6rem;
     }
 
     #skills ul {
         flex-direction: column;
-        gap: 0.5rem;
+        align-items: center;
     }
 }
