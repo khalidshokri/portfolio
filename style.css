@@ -237,6 +237,10 @@ footer {
     background: #1a1a1a;
 }
 
+.dark #projects {
+    background: #0f0f0f; /* dark background for the projects section */
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
     header h1 {
@@ -251,3 +255,4 @@ footer {
         gap: 20px;
     }
 }
+
