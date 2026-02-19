@@ -37,9 +37,9 @@ nav {
 /* NAV LINKS */
 nav ul {
     display: flex;
-    gap: 40px; /* spacing between links */
+    gap: 40px;
     list-style: none;
-    flex-wrap: wrap; /* allow wrapping on smaller screens */
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -56,8 +56,8 @@ nav a:hover {
 /* DARK MODE TOGGLE */
 #darkToggle {
     position: absolute;
-    right: 8%;          /* move to far right inside nav */
-    top: 50%;           /* vertical center */
+    right: 8%;
+    top: 50%;
     transform: translateY(-50%);
     border: none;
     background: none;
@@ -87,9 +87,15 @@ header h1 {
     margin-top: 20px;
 }
 
-/* SECTIONS */
+/* SECTIONS (VERTICAL + HORIZONTAL CENTER) */
 section {
-    padding: 80px 10%;
+    min-height: 100vh;           /* full viewport height */
+    display: flex;
+    flex-direction: column;      /* stack heading + content */
+    justify-content: center;     /* vertical center */
+    align-items: center;         /* horizontal center */
+    text-align: center;          /* center all text */
+    padding: 0 10%;
     opacity: 0;
     transform: translateY(30px);
     transition: 0.8s ease;
@@ -100,18 +106,37 @@ section.show {
     transform: translateY(0);
 }
 
+/* GLOBAL SECTION TEXT */
+section h2,
+section p,
+section ul {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 h2 {
     color: var(--blue);
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 /* SKILLS */
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
 #skills ul {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
     list-style: none;
+    justify-content: center;
 }
 
 #skills li {
@@ -130,20 +155,28 @@ h2 {
 /* PROJECTS */
 #projects {
     background: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px 10%;
 }
 
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
+    justify-content: center; /* center the grid */
+    gap: 25px 50px;         /* row gap, column gap */
 }
 
 .project-card {
+    max-width: 300px;
     background: white;
     padding: 20px;
     border-radius: 14px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
     transition: 0.3s;
+    text-align: center;     /* center text inside card */
 }
 
 .project-card:hover {
@@ -157,14 +190,34 @@ h2 {
     margin: 10px 0;
 }
 
-/* PLOTLY */
-.project-card iframe {
-    width: 100%;
-    height: 400px;
-    border: none;
-    border-radius: 12px;
-    margin: 10px 0;
+/* Living Room card under Floating Island */
+.project-card.living-room {
+    grid-row: 2; /* second row under Floating Island */
+}
+
+/* PLOTLY / PIE CHART SECTION */
+.pie-chart-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical center */
+    align-items: center;     /* horizontal center */
+    min-height: 100vh;       /* full viewport height */
+    text-align: center;
     background: white;
+    padding: 40px 10%;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    margin-top: 60px;
+}
+
+.pie-chart-wrapper iframe {
+    width: 100%;
+    max-width: 700px;
+    height: 650px;
+    border: none;
+    border-radius: 14px;
+    background: white;
+    margin: 20px 0;
 }
 
 /* SPACING */
@@ -181,24 +234,16 @@ h2 {
     margin-bottom: 16px;
 }
 
-/* BIG PIE CHART */
-.pie-chart-wrapper {
-    margin-top: 60px;
-    background: white;
-    padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
-
-.pie-chart-wrapper iframe {
-    width: 100%;
-    height: 650px;
-    border: none;
-    border-radius: 14px;
-    background: white;
-}
-
 /* CONTACT */
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
 #contact a {
     color: var(--blue);
     text-decoration: none;
@@ -249,10 +294,23 @@ footer {
     }
 
     nav ul {
-        gap: 15px;
+        gap: 20px;
     }
 
     #darkToggle {
-        right: 5%; /* keep toggle inside viewport on small screens */
+        right: 5%; /* keep toggle inside viewport */
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr; /* stack projects on mobile */
+    }
+
+    .pie-chart-wrapper iframe {
+        height: 500px; /* smaller chart for mobile */
+    }
+
+    #skills ul {
+        gap: 10px;
+        flex-wrap: wrap;
     }
 }
