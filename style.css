@@ -162,7 +162,6 @@ h2 {
 }
 
 #living-room {
-    grid-column: 1 / -1;    /* span full grid row */
     justify-self: center;    /* center horizontally */
 }
 
@@ -276,4 +275,5 @@ footer p {
         right: 5%; /* keep toggle inside viewport on small screens */
     }
 }
+
 
