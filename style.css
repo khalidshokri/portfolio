@@ -93,6 +93,7 @@ section {
     opacity: 0;
     transform: translateY(30px);
     transition: 0.8s ease;
+    text-align: center; /* centers all text inside sections */
 }
 
 section.show {
