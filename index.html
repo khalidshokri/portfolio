@@ -24,6 +24,8 @@
 <header>
     <h1>Khalid Shokri</h1>
     <p>Creative Digital Student | Passionate About Technology, Storytelling & Design</p>
+
+    <!-- CV DOWNLOAD (MAKE SURE cv.pdf EXISTS IN ROOT) -->
     <a href="cv.pdf" class="cv-btn" download>Download CV</a>
 </header>
 
@@ -78,22 +80,6 @@
             <p><strong>Tools:</strong> Adobe Premiere Pro</p>
         </article>
 
-        <!-- AMAZON DATA VISUALISATION -->
-        <article class="project-card">
-            <h3>Amazon Sales Revenue Data Visualisation</h3>
-            <p>An interactive pie chart created using an Amazon sales dataset.</p>
-
-            <!-- EMBED YOUR PLOTLY CHART -->
-            <iframe src="revenue_chart.html"></iframe>
-
-            <ul>
-                <li>Imported and cleaned CSV dataset</li>
-                <li>Used Python to process data</li>
-                <li>Created an interactive Plotly visualisation</li>
-            </ul>
-            <p><strong>Tools:</strong> Python, Pandas, Plotly</p>
-        </article>
-
         <article class="project-card">
             <h3>Island Environment</h3>
             <img src="island.png" alt="3D Island Render">
@@ -119,6 +105,22 @@
         </article>
 
     </div>
+
+    <!-- MOVED PIE CHART TO BOTTOM & EXPANDED -->
+    <div class="pie-chart-wrapper">
+        <h3>Amazon Sales Revenue Data Visualisation</h3>
+        <p>An interactive pie chart created using an Amazon sales dataset.</p>
+
+        <iframe src="revenue_chart.html"></iframe>
+
+        <ul>
+            <li>Imported and cleaned CSV dataset</li>
+            <li>Used Python to process data</li>
+            <li>Created an interactive Plotly visualisation</li>
+        </ul>
+        <p><strong>Tools:</strong> Python, Pandas, Plotly</p>
+    </div>
+
 </section>
 
 <!-- CONTACT -->
