@@ -176,7 +176,7 @@ h2 {
 }
 
 #living-room {
-    max-width: 303px;      /* same as other cards */
+    max-width: 300px;      /* same as other cards */
     width: 100%;
 }
 
@@ -284,4 +284,3 @@ footer p {
         right: 5%; /* keep toggle inside viewport on small screens */
     }
 }
-
