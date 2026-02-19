@@ -161,10 +161,10 @@ h2 {
     box-shadow: 0 20px 40px rgba(22,62,100,0.2);
 }
 
-/* CENTER LIVING ROOM CARD */
-.center-wrapper {
-    display: flex;
-    justify-content: center; /* centers the card horizontally */
+#living-room {
+    grid-column: 1 / -1;  /* make it span the entire row */
+    justify-self: center;  /* center horizontally in the row */
+    max-width: 320px;      /* set a fixed max width so it doesn't stretch */
 }
 
 .project-card img {
@@ -277,6 +277,7 @@ footer p {
         right: 5%; /* keep toggle inside viewport on small screens */
     }
 }
+
 
 
 
