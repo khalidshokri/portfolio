@@ -8,14 +8,27 @@
 </head>
 <body>
 
+<!-- NAVBAR -->
+<nav>
+    <h2>Khalid</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="darkToggle">🌙</button>
+</nav>
+
 <!-- HEADER -->
-<header class="reveal">
+<header>
     <h1>Khalid Shokri</h1>
     <p>Creative Digital Student | Passionate About Technology, Storytelling & Design</p>
+    <a href="cv.pdf" class="cv-btn" download>Download CV</a>
 </header>
 
-<!-- ABOUT SECTION -->
-<section id="about" class="reveal">
+<!-- ABOUT -->
+<section id="about">
     <h2>About Me</h2>
     <p>
         I’m a digital media student from Middlesbrough, UK, currently studying the Level 3 Extended 
@@ -26,8 +39,8 @@
     </p>
 </section>
 
-<!-- SKILLS SECTION -->
-<section id="skills" class="reveal">
+<!-- SKILLS -->
+<section id="skills">
     <h2>Skills</h2>
     <ul>
         <li>3D Modelling & Rendering</li>
@@ -38,84 +51,81 @@
     </ul>
 </section>
 
-<!-- PROJECTS SECTION -->
+<!-- PROJECTS -->
 <section id="projects">
     <h2>Projects & Experiences</h2>
 
-    <article class="project-card reveal">
-        <h3>Proto Visit</h3>
-        <p>Visited the PROTO creative technology hub in Newcastle, where we met industry professionals and learnt about real-world practices in digital media and immersive technology.</p>
-        <ul>
-            <li>Saw how Proto runs projects</li>
-            <li>Observed skills used in the workplace</li>
-            <li>Learnt about careers and company culture</li>
-        </ul>
-    </article>
+    <div class="project-grid">
 
-    <article class="project-card reveal">
-        <h3>Film Buddy (Music Video)</h3>
-        <p>A collaborative music video project for an up-and-coming artist.</p>
-        <ul>
-            <li>Was lead editor for the first half of the project</li>
-            <li>Edited and assembled raw footage into a structured music video</li>
-            <li>Collaborated with the production team and artist to meet creative goals</li>
-        </ul>
-        <p><strong>Tools:</strong> Adobe Premiere Pro</p>
-    </article>
+        <article class="project-card">
+            <h3>PROTO Visit</h3>
+            <p>Visited the PROTO creative technology hub in Newcastle, where we met industry professionals and learned about real-world practices in digital media and immersive technology.</p>
+            <ul>
+                <li>Saw how PROTO runs projects</li>
+                <li>Observed skills used in the workplace</li>
+                <li>Learned about careers and company culture</li>
+            </ul>
+        </article>
 
-    <article class="project-card reveal">
-        <h3>Amazon Sales Revenue Data Visualisation</h3>
-        <p>A pie chart visualisation created using an Amazon sales dataset to show revenue distribution across categories.</p>
-        <ul>
-            <li>Imported and cleaned CSV dataset</li>
-            <li>Used Python to process and visualise data</li>
-            <li>Created a pie chart to communicate revenue insights</li>
-        </ul>
-        <p><strong>Tools:</strong> Python, Pandas</p>
-    </article>
+        <article class="project-card">
+            <h3>Film Buddy</h3>
+            <p>A collaborative music video project for an up-and-coming artist.</p>
+            <ul>
+                <li>Was lead editor for the first half of the project</li>
+                <li>Edited and assembled raw footage into a structured music video</li>
+                <li>Collaborated with the production team and artist</li>
+            </ul>
+            <p><strong>Tools:</strong> Adobe Premiere Pro</p>
+        </article>
 
-    <article class="project-card reveal">
-        <h3>Island Model</h3>
-        <img src="island.png" alt="3D Island Render">
-        <p>A 3D island model created to practise environmental design, terrain modelling and lighting.</p>
-        <ul>
-            <li>Modelled terrain and landscape</li>
-        </ul>
-        <p><strong>Tools:</strong> 3ds Max</p>
-    </article>
+        <!-- AMAZON DATA VISUALISATION -->
+        <article class="project-card">
+            <h3>Amazon Sales Revenue Data Visualisation</h3>
+            <p>An interactive pie chart created using an Amazon sales dataset.</p>
 
-    <article class="project-card reveal">
-        <h3>Barrel Prop</h3>
-        <img src="barrel.png" alt="3D Barrel Model">
-        <p>A detailed barrel prop created for use in games and 3D environments.</p>
-        <ul>
-            <li>Enhanced modelling skills</li>
-        </ul>
-        <p><strong>Tools:</strong> 3ds Max</p>
-    </article>
+            <!-- EMBED YOUR PLOTLY CHART -->
+            <iframe src="revenue_chart.html"></iframe>
 
-    <article class="project-card reveal">
-        <h3>Gold Bar Prop</h3>
-        <img src="goldbar.png" alt="3D Gold Bar Model">
-        <p>A realistic gold bar model created to practise materials, reflections and rendering techniques.</p>
-        <ul>
-            <li>Modelled 3D asset</li>
-        </ul>
-        <p><strong>Tools:</strong> 3ds Max</p>
-    </article>
+            <ul>
+                <li>Imported and cleaned CSV dataset</li>
+                <li>Used Python to process data</li>
+                <li>Created an interactive Plotly visualisation</li>
+            </ul>
+            <p><strong>Tools:</strong> Python, Pandas, Plotly</p>
+        </article>
 
-    <article class="project-card reveal">
-        <h3>Living Room Interior Visualisation</h3>
-        <img src="livingroom.png" alt="Living Room 3D Render">
-        <p>A realistic living room interior scene created in 3ds Max, focusing on realistic lighting, materials and interior composition.</p>
-        <ul>
-            <li>Created interior environment in 3ds Max</li>
-            <li>Set up professional lighting and camera angles</li>
-            <li>Focused on realism, composition and interior design principles</li>
-        </ul>
-        <p><strong>Tools:</strong> 3ds Max</p>
-    </article>
+        <article class="project-card">
+            <h3>Island Environment</h3>
+            <img src="island.png" alt="3D Island Render">
+            <p>3D island environment created to practise environmental design and lighting.</p>
+        </article>
 
+        <article class="project-card">
+            <h3>Barrel Prop</h3>
+            <img src="barrel.png" alt="3D Barrel Model">
+            <p>A detailed barrel prop created for game environments.</p>
+        </article>
+
+        <article class="project-card">
+            <h3>Gold Bar Prop</h3>
+            <img src="goldbar.png" alt="3D Gold Bar Model">
+            <p>A realistic gold bar model created to practise materials and reflections.</p>
+        </article>
+
+        <article class="project-card">
+            <h3>Living Room Interior Visualisation</h3>
+            <img src="livingroom.png" alt="Living Room Render">
+            <p>Realistic interior scene focusing on lighting, materials and composition.</p>
+        </article>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:khalidshokri@gmail.com">khalidshokri@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/khalidshokri" target="_blank">github.com/khalidshokri</a></p>
 </section>
 
 <!-- FOOTER -->
@@ -123,22 +133,21 @@
     <p>© 2026 Khalid Shokri. All rights reserved.</p>
 </footer>
 
-<!-- SCROLL ANIMATION SCRIPT -->
+<!-- JAVASCRIPT -->
 <script>
-const reveals = document.querySelectorAll('.reveal');
-
-const observer = new IntersectionObserver((entries) => {
+// Scroll animation
+const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
-    if(entry.isIntersecting){
-      entry.target.classList.add('active');
-      observer.unobserve(entry.target);
-    }
+    if (entry.isIntersecting) entry.target.classList.add("show");
   });
-}, { threshold: 0.1 });
+});
+document.querySelectorAll("section, .project-card").forEach(el => observer.observe(el));
 
-reveals.forEach(el => observer.observe(el));
+// Dark mode toggle
+document.getElementById("darkToggle").onclick = () => {
+  document.body.classList.toggle("dark");
+};
 </script>
 
 </body>
 </html>
-
