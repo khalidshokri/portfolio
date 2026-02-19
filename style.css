@@ -26,29 +26,20 @@ nav {
     top: 0;
     width: 100%;
     background: var(--white);
-    display: grid;
-    grid-template-columns: 1fr auto 1fr; /* left space | links | toggle */
+    display: flex;
     align-items: center;
+    justify-content: center; /* center links horizontally */
     padding: 12px 8%;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     z-index: 1000;
 }
 
-/* PERFECTLY CENTRE LINKS */
+/* NAV LINKS */
 nav ul {
-    justify-self: center;
     display: flex;
-    gap: 40px;
+    gap: 40px; /* spacing between links */
     list-style: none;
-}
-
-/* Dark toggle stays right */
-#darkToggle {
-    justify-self: end;
-    border: none;
-    background: none;
-    font-size: 1.2rem;
-    cursor: pointer;
+    flex-wrap: wrap; /* allow wrapping on smaller screens */
 }
 
 nav a {
@@ -60,6 +51,18 @@ nav a {
 
 nav a:hover {
     color: var(--blue);
+}
+
+/* DARK MODE TOGGLE */
+#darkToggle {
+    position: absolute;
+    right: 8%;          /* move to far right inside nav */
+    top: 50%;           /* vertical center */
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
 
 /* HEADER */
@@ -246,6 +249,10 @@ footer {
     }
 
     nav ul {
-        gap: 20px;
+        gap: 15px;
+    }
+
+    #darkToggle {
+        right: 5%; /* keep toggle inside viewport on small screens */
     }
 }
