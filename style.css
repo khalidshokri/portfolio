@@ -104,7 +104,7 @@ section.show {
 /* ABOUT ME DESCRIPTION */
 #about p {
     max-width: 1000px;   /* limits line length */
-    margin: 0 auto;     /* centers the text */
+    margin: 0 auto 20px;  /* 20px space below the paragraph only */
     line-height: 1.6;   /* improves readability */
     text-align: center; /* optional if not already centered */
 }
@@ -266,4 +266,5 @@ footer {
         right: 5%; /* keep toggle inside viewport on small screens */
     }
 }
+
 
