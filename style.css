@@ -20,28 +20,24 @@ body {
     transition: 0.3s;
 }
 
-/* NAVBAR */
+/* NAVBAR FIXED & LINKS CENTERED */
 nav {
     position: fixed;
     top: 0;
     width: 100%;
     background: var(--white);
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    display: flex;
+    justify-content: center; /* Center the nav links */
     align-items: center;
     padding: 12px 8%;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     z-index: 1000;
-}
-
-nav h2 {
-    justify-self: start; /* Logo stays left */
+    gap: 40px; /* Space between links and dark toggle */
 }
 
 nav ul {
-    justify-self: center; /* Links centered */
     display: flex;
-    gap: 40px; /* Space between links */
+    gap: 40px;
     list-style: none;
 }
 
@@ -57,7 +53,7 @@ nav a:hover {
 }
 
 #darkToggle {
-    justify-self: end; /* Dark mode toggle on right */
+    margin-left: auto; /* Push the button to the right */
     border: none;
     background: none;
     font-size: 1.2rem;
@@ -129,11 +125,6 @@ h2 {
 /* PROJECTS GRID */
 #projects {
     background: var(--bg);
-}
-
-/* Smooth dark mode transition for projects section */
-#projects {
-    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .project-grid {
@@ -220,6 +211,7 @@ footer {
 .dark {
     background: #0f0f0f;
     color: white;
+    transition: 0.3s;
 }
 
 .dark nav {
@@ -230,20 +222,20 @@ footer {
     color: white;
 }
 
-.dark .project-card {
-    background: #1a1a1a;
+.dark #projects {
+    background: #0f0f0f; /* projects section dark background */
 }
 
-.dark footer {
-    background: black;
+.dark .project-card {
+    background: #1a1a1a;
 }
 
 .dark .pie-chart-wrapper {
     background: #1a1a1a;
 }
 
-.dark #projects {
-    background: #0f0f0f; /* dark background for the projects section */
+.dark footer {
+    background: black;
 }
 
 /* RESPONSIVE */
@@ -252,13 +244,7 @@ footer {
         font-size: 2.2rem;
     }
 
-    nav {
-        grid-template-columns: 1fr auto 1fr;
-    }
-
     nav ul {
         gap: 20px;
     }
 }
-
-
