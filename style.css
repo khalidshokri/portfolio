@@ -131,6 +131,11 @@ h2 {
     background: var(--bg);
 }
 
+/* Smooth dark mode transition for projects section */
+#projects {
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -255,4 +260,5 @@ footer {
         gap: 20px;
     }
 }
+
 
