@@ -113,6 +113,7 @@ h2 {
     flex-wrap: wrap;
     gap: 12px;
     list-style: none;
+    justify-content: center; /* <-- centers the skill shapes */
 }
 
 #skills li {
@@ -257,3 +258,4 @@ footer {
         right: 5%; /* keep toggle inside viewport on small screens */
     }
 }
+
